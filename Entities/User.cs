@@ -12,5 +12,10 @@ namespace JWT_Cookie_Authentication_ASP.NET_Core_Web_API.Entities
 
         [JsonIgnore]
         public string Password { get; set; } = string.Empty;
+
+        public override string ToString()
+        {
+            return $"*** User ***\nId: {Id}\nName: {Name}\nEmail: {Email}\nFavorite Color: {FavoriteColor}\nUsername: {Username}\n*** User ***";
+        }
     }
 }
